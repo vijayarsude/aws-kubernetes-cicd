@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh '''
                 python3 -m venv --clear .venv
-                .venv/bin/pip install -r requirements.txt
+                .venv/bin/pip install -r app/requirements.txt
                 .venv/bin/pip install pytest
                 '''
             }
